@@ -1,0 +1,111 @@
+suicide_self_harm:
+  keywords_ta:
+    - "நான் சாகணும்"
+    - "சாக போறேன்"
+    - "தற்கொலை"
+    - "உயிரை விட"
+    - "பூச்சி மருந்து"
+    - "விஷம் குடிக்க"
+    - "குடிச்சிரலாம்னு இருக்கு"
+    - "வாழ பிடிக்கல"
+    - "செத்துடலாம்"
+  keywords_en:
+    - "suicide"
+    - "kill myself"
+    - "end my life"
+    - "want to die"
+    - "drink poison"
+    - "pesticide"
+    - "hanging"
+  patterns:
+    - "(?i)(want to die|kill(ing)? myself|suicide|commit suicide|end(ing)? my life|take my own life)"
+    - "(சாக|தற்கொலை|விஷம்|பூச்சி மருந்து)"
+
+domestic_violence:
+  keywords_ta:
+    - "கணவர் அடிக்கிறான்"
+    - "புருஷன் அடிக்கிறான்"
+    - "என்னை அடிக்கிறாங்க"
+    - "வரதட்சணை கொடுமை"
+    - "மாமியார் கொடுமை"
+    - "கொன்று விடுவேன்"
+    - "உடம்பில் காயம்"
+    - "துன்புறுத்துகிறார்"
+  keywords_en:
+    - "husband beats me"
+    - "husband is beating me"
+    - "domestic violence"
+    - "dowry torture"
+    - "dowry harassment"
+    - "threatens to kill me"
+    - "physical abuse"
+    - "he hits me"
+    - "he hit me"
+    - "beating me"
+    - "beats me"
+    - "abusing me"
+  patterns:
+    - "(?i)(husband\\s+(is\\s+)?(beating|hitting|abusing)|domestic violence|dowry (torture|harassment)|kill me|beating me|beats me|hits? me|(physical|domestic|emotional) abuse|abus(e|es|ed|ing) me)"
+    - "(அடிக்கிறான்|கொடுமை|வன்முறை|துன்புறுத்தல்)"
+
+child_abuse:
+  keywords_ta:
+    - "குழந்தை திருமணம்"
+    - "குழந்தையை தொட்டான்"
+    - "பாலியல் தொல்லை"
+    - "சின்ன பெண்"
+    - "சைல்டுலைன்"
+    - "பள்ளி சிறுமி"
+  keywords_en:
+    - "child abuse"
+    - "touching my daughter"
+    - "minor marriage"
+    - "pocso"
+    - "child marriage"
+    - "my child is being abused"
+    - "rape"
+    - "molested"
+  patterns:
+    - "(?i)(pocso|child abuse|child marriage|pedophile|minor girl|\\brape(d|s)?\\b|molest)"
+    - "(குழந்தை திருமணம்|பாலியல்|சிறுமி)"
+
+cyber_fraud:
+  keywords_ta:
+    - "வங்கி பணம் திருடு"
+    - "OTP திருட்டு"
+    - "போலி போன் கால்"
+    - "பணம் போச்சு"
+    - "கணக்கில் இருந்து பணம் எடுக்கப்பட்டது"
+  keywords_en:
+    - "cyber fraud"
+    - "money debited"
+    - "bank fraud"
+    - "otp scam"
+    - "phishing"
+    - "fraud"
+    - "unauthorised transaction"
+  patterns:
+    - "(?i)(cyber fraud|money (was |has been )?debited|scam|stolen money|\\b1930\\b|unauthori[sz]ed|account hacked)"
+
+medical_emergency:
+  keywords_ta:
+    - "பாம்பு கடி"
+    - "நெஞ்சு வலி"
+    - "மூச்சு விட முடியல"
+    - "ரத்தப்போக்கு"
+    - "விபத்து ஆம்புலன்ஸ்"
+  keywords_en:
+    - "snake bite"
+    - "chest pain"
+    - "heart attack"
+    - "cannot breathe"
+    - "can't breathe"
+    - "ambulance"
+    - "severe bleeding"
+    - "unconscious"
+    - "not breathing"
+    - "fainted and not waking"
+    - "accident"
+  patterns:
+    - "(?i)(snake bite|chest pain|heart attack|ambulance|severe bleeding|cannot breathe|can'?t breathe|unconscious|not breathing)"
+    - "(பாம்பு கடி|நெஞ்சு வலி|ஆம்புலன்ஸ்)"

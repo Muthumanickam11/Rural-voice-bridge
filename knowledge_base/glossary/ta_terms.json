@@ -1,0 +1,37 @@
+{
+  "patta": {
+    "ta": "பட்டா",
+    "simple_meaning_ta": "நிலம் உங்கள் பெயரில் வருவாய்த் துறை ஆவணத்தில் உள்ளதை காட்டும் பதிவேடு. (இது உரிமை ஆவணம் அல்ல, அனுபவ ஆவணம்)",
+    "en": "Revenue landholding record"
+  },
+  "chitta": {
+    "ta": "சிட்டா",
+    "simple_meaning_ta": "ஒரு குறிப்பிட்ட நபரின் பெயரில் அந்த கிராமத்தில் உள்ள அனைத்து நிலங்களின் வகைப்பாடு மற்றும் பரப்பளவு விவரம்.",
+    "en": "Consolidated record of landholdings per person in a village"
+  },
+  "fmb": {
+    "ta": "புல வரைபடம் (FMB Sketch)",
+    "simple_meaning_ta": "நிலத்தின் சரியான நான்கு எல்லைகள், அளவுகள் மற்றும் வடிவத்தைக் காட்டும் வரைபடம்.",
+    "en": "Field Measurement Book sketch showing land boundaries"
+  },
+  "ec": {
+    "ta": "வில்லங்கச் சான்றிதழ் (Encumbrance Certificate)",
+    "simple_meaning_ta": "கடந்த ஆண்டுகளில் இந்த நிலத்தில் ஏதேனும் கிரையம், அடமானம் அல்லது கடன் பரிவர்த்தனை நடந்துள்ளதா என்பதைக் காட்டும் பதிவுத்துறை சான்று.",
+    "en": "Encumbrance Certificate showing registered property transactions"
+  },
+  "bns": {
+    "ta": "பாரதிய நியாய சன்ஹிதா (BNS)",
+    "simple_meaning_ta": "பழைய இந்திய தண்டனைச் சட்டம் (IPC)-க்கு மாற்றாக 2024 ஜூலை 1 முதல் அமலுக்கு வந்த புதிய குற்றவியல் சட்டம்.",
+    "en": "Bharatiya Nyaya Sanhita (replacing IPC)"
+  },
+  "rti": {
+    "ta": "தகவல் அறியும் உரிமைச் சட்டம் (RTI)",
+    "simple_meaning_ta": "அரசு அலுவலகங்களில் உள்ள கோப்புகள், உத்தரவுகள், மற்றும் முடிவுகளின் அதிகாரப்பூர்வ நகல்களை ₹10 கட்டணத்தில் பெறும் சட்டப்பூர்வ உரிமை.",
+    "en": "Right to Information Act"
+  },
+  "esevai": {
+    "ta": "இ-சேவை மையம் (e-Sevai)",
+    "simple_meaning_ta": "பட்டா, சாதி, வருமானம், பிறப்பு போன்ற அரசு சான்றிதழ்களுக்கு ஆன்லைனில் விண்ணப்பிக்கும் அரசு சேவை மையம்.",
+    "en": "Government citizen e-services center"
+  }
+}

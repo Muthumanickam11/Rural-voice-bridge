@@ -1,0 +1,552 @@
+[
+  {
+    "scheme_id": "pm_kisan",
+    "names": {
+      "en": "PM-KISAN Samman Nidhi",
+      "ta": "பிரதம மந்திரி கிசான் சம்மான் நிதி",
+      "aliases": ["PM Kisan", "பி.எம். கிசான்", "கிசான் நிதி", "விவசாயி 6000"]
+    },
+    "level": "central",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 6000,
+      "frequency": "₹2,000 per 4 months (3 installments per year) via DBT",
+      "description_ta": "ஆண்டுக்கு ₹6,000 (3 தவணைகளில் தலா ₹2,000) நேரடியாக வங்கி கணக்கில் செலுத்தப்படுகிறது."
+    },
+    "audience": ["farmer"],
+    "rules": {
+      "all": [
+        {"field": "occupation", "in": ["farmer"]},
+        {"field": "owns_land", "in": ["yes"]},
+        {"field": "family_taxpayer_or_govt", "eq": false}
+      ],
+      "maybe_if": [
+        {"field": "owns_land", "eq": "family_not_in_my_name", "note": "பட்டா உங்கள் பெயரில் பதிவு செய்யப்பட வேண்டும் / பட்டா மாறுதல் அவசியம்."}
+      ]
+    },
+    "not_eligible_reasons": {
+      "occupation": "விவசாய நிலம் சொந்தமாக வைத்துள்ள விவசாயிகளுக்கு மட்டுமே இத்திட்டம் பொருந்தும். குத்தகை விவசாயிகள் மற்றும் நிலமற்ற விவசாய கூலித் தொழிலாளர்கள் தற்போது இதில் சேர்க்கப்படவில்லை.",
+      "family_taxpayer_or_govt": "குடும்பத்தில் யாராவது வருமான வரி செலுத்துபவராகவோ அல்லது அரசு ஊழியராகவோ இருந்தால் PM-KISAN உதவித்தொகை பெற இயலாது."
+    },
+    "documents": [
+      "ஆதார் அட்டை (வங்கி கணக்குடன் இணைக்கப்பட்டது)",
+      "நில ஆவணம் (பட்டா / சிட்டா நகல்)",
+      "வங்கி கணக்கு புத்தகம் (வங்கி கணக்கு எண் & IFSC)",
+      "ஆதாருடன் இணைக்கப்பட்ட செல்போன் எண்"
+    ],
+    "prerequisites": ["e-KYC நிறைவு செய்யப்பட வேண்டும்", "ஆதார் வங்கி கணக்கு NPCI Seeding"],
+    "apply": {
+      "portal": "https://pmkisan.gov.in",
+      "offline": "அருகிலுள்ள இ-சேவை மையம் (e-Sevai) / வேளாண்மை உதவி இயக்குநர் அலுவலகம் / தாலுகா அலுவலகம்",
+      "steps_ta": [
+        "1. pmkisan.gov.in தளத்தில் Farmers Corner செல்லவும் அல்லது இ-சேவை மையம் செல்லவும்.",
+        "2. புதிய விவசாயி பதிவு (New Farmer Registration) தேர்வு செய்யவும்.",
+        "3. ஆதார் எண் மற்றும் நில பட்டா விவரங்களை உள்ளிடவும்.",
+        "4. பயோமெட்ரிக் அல்லது OTP மூலம் e-KYC சரிபார்ப்பை முடிக்கவும்."
+      ]
+    },
+    "helpline": ["155261", "1800-115-526", "011-24300606"],
+    "sources": [
+      {
+        "name": "PM-KISAN Official Portal",
+        "url": "https://pmkisan.gov.in",
+        "last_verified": "2026-09-20"
+      }
+    ]
+  },
+  {
+    "scheme_id": "cmchis",
+    "names": {
+      "en": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+      "ta": "முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம்",
+      "aliases": ["CMCHIS", "கலைஞர் காப்பீடு", "அரசு மருத்துவ காப்பீடு", "இலவச சிகிச்சை"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 500000,
+      "frequency": "Up to ₹5 lakh per family per year cashless treatment",
+      "description_ta": "குடும்பத்திற்கு ஆண்டிற்கு ₹5,00,000 வரை ரொக்கமில்லா (cashless) அறுவை சிகிச்சை மற்றும் மருத்துவ சிகிச்சை."
+    },
+    "audience": ["all", "farmer", "worker", "women", "senior"],
+    "rules": {
+      "all": [
+        {"field": "family_income_bucket", "in": ["below_1.2L"]},
+        {"field": "ration_card", "in": ["AAY", "PHH", "NPHH"]}
+      ],
+      "maybe_if": [
+        {"field": "family_income_bucket", "eq": "1.2L_to_2.5L", "note": "ஆண்டு வருமானம் ₹1.2 லட்சத்திற்குள் உள்ளதற்கான வருமானச் சான்றிதழ் தேவை."}
+      ]
+    },
+    "not_eligible_reasons": {
+      "family_income_bucket": "குடும்ப ஆண்டு வருமானம் ₹1,20,000-க்கு மேல் இருந்தால் இத்திட்டத்தின் கீழ் வரம்பு பொருந்தாது."
+    },
+    "documents": [
+      "குடும்ப அட்டை (Ration Card)",
+      "வருமானச் சான்றிதழ் (வருவாய் துறையினரால் வழங்கப்பட்டது - ₹1.20 லட்சத்திற்குள்)",
+      "அனைத்து குடும்ப உறுப்பினர்களின் ஆதார் அட்டைகள்",
+      "குடும்பத் தலைவரின் பாஸ்போர்ட் அளவு புகைப்படம்"
+    ],
+    "prerequisites": ["ஸ்மார்ட் ரேஷன் கார்டில் குடும்ப உறுப்பினர்கள் பெயர் சேர்க்கப்பட்டிருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://www.cmchistn.com",
+      "offline": "மாவட்ட ஆட்சியர் அலுவலகத்தில் உள்ள CMCHIS மையம் / அரசு தலைமை மருத்துவமனை",
+      "steps_ta": [
+        "1. கிராம நிர்வாக அலுவலர் (VAO) மூலம் வருமானச் சான்றிதழ் பெறவும்.",
+        "2. குடும்ப அட்டை மற்றும் ஆதாரங்களுடன் மாவட்ட ஆட்சியர் அலுவலக CMCHIS பிரிவுக்கு செல்லவும்.",
+        "3. கைரேகை மற்றும் புகைப்படம் பதிவு செய்து உடனடியாக அட்டை பெற்றுக்கொள்ளலாம்."
+      ]
+    },
+    "helpline": ["1800-425-3993", "104"],
+    "sources": [
+      {
+        "name": "CMCHIS Official Portal",
+        "url": "https://www.cmchistn.com",
+        "last_verified": "2026-09-20"
+      }
+    ]
+  },
+  {
+    "scheme_id": "vb_gram_g",
+    "names": {
+      "en": "Viksit Bharat - Gramin Rozgar and Awas Mission Guarantee (VB-G RAM G)",
+      "ta": "விக்சித் பாரத் கிராமப்புற வேலைவாய்ப்பு உறுதித் திட்டம் (முந்தைய MGNREGA)",
+      "aliases": ["100 நாள் வேலை", "125 நாள் வேலை", "MGNREGA", "கிராமப்புற வேலைவாய்ப்பு", "VB-G RAM G"]
+    },
+    "level": "central",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 38000,
+      "frequency": "125 days guaranteed wage employment per rural household per year",
+      "description_ta": "ஒவ்வொரு கிராமப்புற குடும்பத்திற்கும் ஆண்டுக்கு 125 நாட்கள் உத்தரவாத வேலைவாய்ப்பு மற்றும் வாராந்திர கூலி வழங்கல்."
+    },
+    "audience": ["worker", "farmer", "women", "all"],
+    "rules": {
+      "all": [
+        {"field": "age_group", "in": ["18_to_59", "60_plus"]},
+        {"field": "occupation", "in": ["labourer", "worker", "farmer", "tenant_farmer", "women_head"]}
+      ]
+    },
+    "not_eligible_reasons": {
+      "age_group": "18 வயது பூர்த்தியடைந்த கிராமப்புற உடல் உழைப்பு செய்ய விரும்பும் பெரியவர்களுக்கு மட்டுமே பணி அட்டை வழங்கப்படும்."
+    },
+    "documents": [
+      "ஆதார் அட்டை",
+      "குடும்ப ரேஷன் கார்டு",
+      "வங்கி கணக்கு புத்தகம் (ஆதார் இணைக்கப்பட்டது)",
+      "பாஸ்போர்ட் அளவு புகைப்படங்கள்"
+    ],
+    "prerequisites": ["கிராம ஊராட்சி அலுவலகத்தில் வேலை அட்டை (Job Card) பெற்றிருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://nrega.nic.in",
+      "offline": "கிராம ஊராட்சி மன்ற அலுவலகம் (Panchayat Office) / ஊராட்சி செயலாளர்",
+      "steps_ta": [
+        "1. கிராம ஊராட்சி செயலாளரிடம் வேலை அட்டை (Job Card) கோரி படிவம் சமர்ப்பிக்கவும்.",
+        "2. 15 நாட்களுக்குள் வேலை அட்டை இலவசமாக வழங்கப்படும்.",
+        "3. வேலை கோரி எழுத்துப்பூர்வ விண்ணப்பம் அளித்தால் 15 நாட்களுக்குள் வேலை வழங்கப்பட வேண்டும்; தவறினால் வேலையின்மை படி வழங்க சட்டத்தில் இடமுண்டு."
+      ]
+    },
+    "helpline": ["1800-180-6127", "112"],
+    "sources": [
+      {
+        "name": "Ministry of Rural Development",
+        "url": "https://rural.gov.in",
+        "last_verified": "2026-09-18"
+      }
+    ]
+  },
+  {
+    "scheme_id": "kmut",
+    "names": {
+      "en": "Kalaignar Magalir Urimai Thogai (KMUT)",
+      "ta": "கலைஞர் மகளிர் உரிமைத் திட்டம்",
+      "aliases": ["மகளிர் உரிமை தொகை", "1000 ரூபாய் திட்டம்", "KMUT", "பெண்கள் உரிமை தொகை"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 12000,
+      "frequency": "₹1,000 per month directly to women bank account",
+      "description_ta": "குடும்பத் தலைவிகளுக்கு மாதம் ₹1,000 வீதம் ஆண்டுக்கு ₹12,000 வாழ்வாதார உதவித்தொகை."
+    },
+    "audience": ["women"],
+    "rules": {
+      "all": [
+        {"field": "gender", "in": ["F"]},
+        {"field": "age_group", "in": ["21_to_59", "18_to_59", "60_plus"]},
+        {"field": "family_income_bucket", "in": ["below_1.2L", "1.2L_to_2.5L"]},
+        {"field": "family_taxpayer_or_govt", "eq": false}
+      ],
+      "maybe_if": [
+        {"field": "gender", "eq": "Other", "note": "திருநங்கைகள் குடும்பத் தலைவியாக விண்ணப்பிக்கலாம்."}
+      ]
+    },
+    "not_eligible_reasons": {
+      "gender": "இத்திட்டம் பெண்களை (குடும்பத் தலைவிகளை) முதன்மையாகக் கொண்டது.",
+      "family_income_bucket": "குடும்ப ஆண்டு வருமானம் ₹2,50,000-க்கு மிகாமல் இருக்க வேண்டும்.",
+      "family_taxpayer_or_govt": "குடும்பத்தில் எவரும் வருமான வரி செலுத்துபவராகவோ, அரசு ஊழியராகவோ அல்லது நான்கு சக்கர வாகனம் சொந்தமாக வைத்திருப்பவராகவோ இருக்கக்கூடாது."
+    },
+    "documents": [
+      "ஸ்மார்ட் ரேஷன் கார்டு (குடும்ப அட்டை)",
+      "குடும்பத் தலைவியின் ஆதார் அட்டை",
+      "மின் கட்டண ரசீது (Consumer Number)",
+      "வங்கி பாஸ்புக் (ஆதார் இணைக்கப்பட்ட கணக்கு)"
+    ],
+    "prerequisites": ["ஆண்டு மின் பயன்பாடு 3,600 யூனிட்டுக்கு குறைவாக இருக்க வேண்டும்; நஞ்சை நிலம் 5 ஏக்கர் அல்லது புஞ்சை நிலம் 10 ஏக்கருக்குள் இருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://kmut.tn.gov.in",
+      "offline": "இ-சேவை மையம் அல்லது தாலுகா அலுவலக சிறப்பு முகாம்",
+      "steps_ta": [
+        "1. ரேஷன் கடைகளில் வழங்கப்படும் விண்ணப்பப் படிவத்தை நிரப்பவும்.",
+        "2. உங்கள் பகுதி சிறப்பு முகாமில் கைரேகை பயோமெட்ரிக் பதிவு செய்யவும்.",
+        "3. விண்ணப்பம் நிராகரிக்கப்பட்டால் இ-சேவை மையம் மூலம் 30 நாட்களுக்குள் மேல்முறையீடு செய்யலாம்."
+      ]
+    },
+    "helpline": ["044-25619224", "1100"],
+    "sources": [
+      {
+        "name": "TN Special Programme Implementation Dept",
+        "url": "https://kmut.tn.gov.in",
+        "last_verified": "2026-09-15"
+      }
+    ]
+  },
+  {
+    "scheme_id": "pmay_g",
+    "names": {
+      "en": "Pradhan Mantri Awaas Yojana - Gramin (PMAY-G)",
+      "ta": "பிரதம மந்திரி ஊரக வீட்டு வசதித் திட்டம்",
+      "aliases": ["PMAY", "பிரதமர் வீடு திட்டம்", "இலவச வீடு", "கலைஞர் கனவு இல்லம்"]
+    },
+    "level": "central",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 120000,
+      "frequency": "₹1.20 lakh (plains) + state housing top-up in 4 installments",
+      "description_ta": "கிராமப்புறங்களில் கான்கிரீட் வீடு கட்ட ₹1,20,000 மத்திய உதவி மற்றும் தமிழக அரசின் கூடுதல் நிதி உதவி."
+    },
+    "audience": ["all", "farmer", "worker"],
+    "rules": {
+      "all": [
+        {"field": "family_income_bucket", "in": ["below_1.2L", "1.2L_to_2.5L"]},
+        {"field": "ration_card", "in": ["AAY", "PHH"]}
+      ]
+    },
+    "not_eligible_reasons": {
+      "family_income_bucket": "சொந்தமாக கான்கிரீட் வீடு உள்ளவர்கள் அல்லது அரசு ஊழியர்கள் குடும்பத்திற்கு இத்திட்டம் கிடைக்காது."
+    },
+    "documents": [
+      "ஆதார் அட்டை",
+      "ரேஷன் கார்டு (AAY அல்லது முன்னுரிமை அட்டை)",
+      "வீட்டு மனை பட்டா அல்லது நில உரிமை ஆவணம்",
+      "வங்கி கணக்கு புத்தகம்",
+      "மகாத்மா காந்தி / VB-G RAM G வேலை அட்டை"
+    ],
+    "prerequisites": ["SECC 2011 பட்டியல் அல்லது கிராம சபை அங்கீகரித்த தகுதிப் பட்டியலில் பெயர் இருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://pmayg.nic.in",
+      "offline": "வட்டார வளர்ச்சி அலுவலகம் (BDO Office) / கிராம ஊராட்சி செயலர்",
+      "steps_ta": [
+        "1. கிராம ஊராட்சி செயலரிடம் தகுதிப் பட்டியலில் பெயர் சரிபார்க்கவும்.",
+        "2. கிராம சபை கூட்டத்தில் வீடு ஒதுக்கீட்டு தீர்மானம் பெறவும்.",
+        "3. பி.டி.ஓ (BDO) அலுவலகம் மூலம் வீடு கட்டும் படி நிலைகள் Geotag செய்யப்பட்டு வங்கி கணக்கில் பணம் வரவு வைக்கப்படும்."
+      ]
+    },
+    "helpline": ["1800-11-6446", "1100"],
+    "sources": [
+      {
+        "name": "Ministry of Rural Development",
+        "url": "https://pmayg.nic.in",
+        "last_verified": "2026-09-12"
+      }
+    ]
+  },
+  {
+    "scheme_id": "pudhumai_penn",
+    "names": {
+      "en": "Pudhumai Penn Scheme (Moovalur Ramamirtham Ammaiyar Scheme)",
+      "ta": "புதுமைப் பெண் திட்டம் (மூவலூர் ராமாமிர்தம் உயர்கல்வி உறுதி)",
+      "aliases": ["புதுமைப் பெண்", "மாணவிகளுக்கு 1000", "கல்லூரி மாணவிகள் உதவி"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 12000,
+      "frequency": "₹1,000 per month until completion of degree/diploma",
+      "description_ta": "பட்டப்படிப்பு அல்லது டிப்ளமோ முடியும் வரை கல்லூரி மாணவிகளுக்கு மாதம் ₹1,000 நேரடி வங்கிப் பரிமாற்றம்."
+    },
+    "audience": ["student", "women"],
+    "rules": {
+      "all": [
+        {"field": "gender", "in": ["F"]},
+        {"field": "occupation", "in": ["student"]}
+      ]
+    },
+    "not_eligible_reasons": {
+      "occupation": "அரசுப் பள்ளிகளில் (6 முதல் 12-ஆம் வகுப்பு வரை) படித்து உயர்கல்வியில் சேர்ந்த மாணவிகளுக்கு மட்டுமே பொருந்தும்."
+    },
+    "documents": [
+      "மாணவியின் ஆதார் அட்டை",
+      "6 முதல் 12 வரை அரசுப் பள்ளியில் படித்ததற்கான சான்றிதழ் (EMIS எண்)",
+      "கல்லூரி அடையாள அட்டை / சேர்க்கை ரசீது",
+      "மாணவியின் தனிப்பட்ட சேமிப்பு வங்கி கணக்கு புத்தகம்"
+    ],
+    "prerequisites": ["6 முதல் 12 வரை அரசுப் பள்ளியில் படித்திருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://penkalvi.tn.gov.in",
+      "offline": "பயிலும் கல்லூரி அலுவலகம் (Nodal Officer)",
+      "steps_ta": [
+        "1. கல்லூரி முதலாமாண்டு சேர்ந்ததும் கல்லூரி பொறுப்பு அதிகாரியிடம் ஆவணங்களை வழங்கவும்.",
+        "2. கல்லூரி மூலம் penkalvi.tn.gov.in போர்ட்டலில் EMIS அடிப்படையில் பதிவு செய்யப்படும்.",
+        "3. சரிபார்ப்புக்குப் பின் வங்கி கணக்கில் மாதந்தோறும் ₹1,000 வரவு வைக்கப்படும்."
+      ]
+    },
+    "helpline": ["044-25619224", "1100"],
+    "sources": [
+      {
+        "name": "TN Social Welfare Department",
+        "url": "https://penkalvi.tn.gov.in",
+        "last_verified": "2026-09-15"
+      }
+    ]
+  },
+  {
+    "scheme_id": "tamil_pudhalvan",
+    "names": {
+      "en": "Tamil Pudhalvan Scheme",
+      "ta": "தமிழ்ப் புதல்வன் திட்டம்",
+      "aliases": ["தமிழ்ப் புதல்வன்", "மாணவர்களுக்கு 1000", "கல்லூரி மாணவர்கள் உதவி"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 12000,
+      "frequency": "₹1,000 per month until completion of degree/diploma",
+      "description_ta": "அரசுப் பள்ளியில் படித்த மாணவர்களுக்கு உயர்கல்வி முடியும் வரை மாதம் ₹1,000 வங்கி கணக்கில் உதவித்தொகை."
+    },
+    "audience": ["student"],
+    "rules": {
+      "all": [
+        {"field": "gender", "in": ["M"]},
+        {"field": "occupation", "in": ["student"]}
+      ]
+    },
+    "not_eligible_reasons": {
+      "occupation": "6 முதல் 12 வரை அரசுப் பள்ளிகளில் தமிழ் வழியில்/அரசுப் பள்ளியில் படித்து கல்லூரி சேர்ந்த மாணவர்கள் மட்டுமே தகுதி."
+    },
+    "documents": [
+      "மாணவரின் ஆதார் அட்டை",
+      "6-12 அரசுப் பள்ளி படிப்பு சான்று (EMIS எண்)",
+      "கல்லூரி சேர்க்கை சான்றிதழ்",
+      "வங்கி கணக்கு புத்தகம் (ஆதார் இணைக்கப்பட்டது)"
+    ],
+    "prerequisites": ["அரசுப் பள்ளியில் 6 முதல் 12 வரை பயின்றிருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://tamilpudhalvan.tn.gov.in",
+      "offline": "பயிலும் கல்லூரி அலுவலகம்",
+      "steps_ta": [
+        "1. கல்லூரியில் உள்ள உதவித்தொகை பொறுப்பாளரிடம் EMIS எண் சமர்ப்பிக்கவும்.",
+        "2. கல்லூரி நிர்வாகம் மூலம் அரசின் இணையதளத்தில் விண்ணப்பிக்கப்படும்.",
+        "3. வங்கி கணக்கு ஆதார் இணைக்கப்பட்டிருக்க வேண்டும்."
+      ]
+    },
+    "helpline": ["1100"],
+    "sources": [
+      {
+        "name": "TN Higher Education Dept",
+        "url": "https://tamilpudhalvan.tn.gov.in",
+        "last_verified": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "scheme_id": "free_electricity",
+    "names": {
+      "en": "Tamil Nadu Free Domestic Electricity (100 + 200 units)",
+      "ta": "இலவச மின்சாரத் திட்டம் (100 + 200 யூனிட்)",
+      "aliases": ["100 யூனிட் இலவச மின்சாரம்", "இலவச கரண்ட்", "TANGEDCO 100 units"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 3000,
+      "frequency": "100 units free per billing cycle + government tariff subsidies",
+      "description_ta": "அனைத்து வீட்டு மின் நுகர்வோருக்கும் 2 மாத சுழற்சியில் முதல் 100 யூனிட் முழு இலவசம் மற்றும் மானிய விலையில் மின்சாரம்."
+    },
+    "audience": ["all"],
+    "rules": {
+      "all": [
+        {"field": "owns_land", "in": ["yes", "no", "family_not_in_my_name"]}
+      ]
+    },
+    "not_eligible_reasons": {},
+    "documents": ["மின் இணைப்பு அட்டை / நுகர்வோர் எண்", "ஆதார் அட்டை (மின் இணைப்புடன் இணைக்கப்பட்டது)"],
+    "prerequisites": ["மின் இணைப்பு எண்ணுடன் ஆதார் எண் இணைக்கப்பட்டிருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://nppes.tnebltd.org/Aadhaar/",
+      "offline": "TANGEDCO உதவி பொறியாளர் அலுவலகம் / மின்வாரிய பிரிவு அலுவலகம்",
+      "steps_ta": [
+        "1. தமிழ்நாடு மின்வாரிய இணையதளத்தில் ஆதார் எண்ணை மின் இணைப்புடன் இணைக்கவும்.",
+        "2. 100 யூனிட் வரை கட்டணம் தானாகவே தள்ளுபடி செய்யப்படும்."
+      ]
+    },
+    "helpline": ["1912", "9445851912"],
+    "sources": [
+      {
+        "name": "TANGEDCO Official Portal",
+        "url": "https://www.tangedco.gov.in",
+        "last_verified": "2026-09-12"
+      }
+    ]
+  },
+  {
+    "scheme_id": "old_age_pension",
+    "names": {
+      "en": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS / OAP)",
+      "ta": "முதியோர் உதவித்தொகை திட்டம் (OAP)",
+      "aliases": ["முதியோர் பென்ஷன்", "OAP", "ஆதரவற்றோர் பென்ஷன்", "1000 பென்ஷன்"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 12000,
+      "frequency": "₹1,000 per month (in some categories up to ₹1,200) directly via DBT",
+      "description_ta": "ஆதரவற்ற முதியோருக்கு மாதம் ₹1,000 நேரடி வங்கி கணக்கு அல்லது அஞ்சலகம் மூலம் வழங்கப்படும்."
+    },
+    "audience": ["senior"],
+    "rules": {
+      "all": [
+        {"field": "age_group", "in": ["60_plus"]},
+        {"field": "family_income_bucket", "in": ["below_1.2L"]},
+        {"field": "family_taxpayer_or_govt", "eq": false}
+      ]
+    },
+    "not_eligible_reasons": {
+      "age_group": "விண்ணப்பதாரருக்கு குறைந்தபட்சம் 60 வயது பூர்த்தியடைந்திருக்க வேண்டும்.",
+      "family_income_bucket": "ஆதரவற்ற வறிய நிலையில் உள்ள முதியோருக்கு மட்டுமே இது பொருந்தும்."
+    },
+    "documents": [
+      "ஆதார் அட்டை (வயது மற்றும் முகவரி சான்று)",
+      "குடும்ப அட்டை (Ration Card)",
+      "வங்கி கணக்கு புத்தகம் / தபால் அலுவலக சேமிப்பு கணக்கு",
+      "கிராம நிர்வாக அலுவலர் (VAO) ஆதரவற்றோர் / வறுமை அறிக்கை"
+    ],
+    "prerequisites": ["60 வயது பூர்த்தியடைந்திருக்க வேண்டும்; அரசு அல்லது பிற வழக்கமான ஓய்வூதியம் பெறக்கூடாது"],
+    "apply": {
+      "portal": "https://tnesevai.tn.gov.in",
+      "offline": "அருகிலுள்ள இ-சேவை மையம் / வட்டாட்சியர் (தாலுகா) அலுவலக சமூக பாதுகாப்பு பிரிவு",
+      "steps_ta": [
+        "1. இ-சேவை மையத்திற்கு சென்று OAP விண்ணப்பம் சமர்ப்பிக்கவும்.",
+        "2. கிராம நிர்வாக அலுவலர் (VAO) மற்றும் வருவாய் ஆய்வாளர் (RI) ஆய்வு செய்வார்கள்.",
+        "3. வட்டாட்சியர் ஒப்புதலுக்குப் பின் வங்கி கணக்கில் மாத ஓய்வூதியம் வரும்."
+      ]
+    },
+    "helpline": ["14567", "1100"],
+    "sources": [
+      {
+        "name": "TN Social Welfare & Revenue Dept",
+        "url": "https://eservices.tn.gov.in",
+        "last_verified": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "scheme_id": "uzhavar_padhukappu",
+    "names": {
+      "en": "Chief Minister's Uzhavar Padhukappu Thittam (Farmers Social Security)",
+      "ta": "முதலமைச்சரின் உழவர் பாதுகாப்புத் திட்டம்",
+      "aliases": ["உழவர் பாதுகாப்பு அட்டை", "விவசாய பாதுகாப்பு திட்டம்", "விவசாய கூலி பென்ஷன்"]
+    },
+    "level": "tamilnadu",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 100000,
+      "frequency": "Accidental death relief ₹1 lakh, natural death relief ₹20,000, marriage aid ₹10,000",
+      "description_ta": "விவசாயிகள், விவசாயக் கூலிகள் விபத்தில் இறந்தால் ₹1 லட்சம் இழப்பீடு, இயற்கை மரணத்திற்கு ₹20,000, மற்றும் கல்வி, திருமண உதவிகள்."
+    },
+    "audience": ["farmer", "worker"],
+    "rules": {
+      "all": [
+        {"field": "occupation", "in": ["farmer", "tenant_farmer", "labourer"]},
+        {"field": "age_group", "in": ["18_to_59", "60_plus"]}
+      ]
+    },
+    "not_eligible_reasons": {
+      "occupation": "விவசாயம் சார்ந்த பணிகளில் நேரடியாக ஈடுபடும் சிறுகுறு விவசாயிகள், குத்தகை விவசாயிகள் மற்றும் விவசாயத் தொழிலாளர்களுக்கு மட்டுமே அட்டை வழங்கப்படும்."
+    },
+    "documents": [
+      "உழவர் பாதுகாப்பு அட்டை (உறுப்பினர் அட்டை)",
+      "ஆதார் அட்டை",
+      "குடும்ப அட்டை",
+      "நில ஆவணம் அல்லது VAO விவசாய கூலி சான்றிதழ்"
+    ],
+    "prerequisites": ["உழவர் பாதுகாப்பு திட்ட உறுப்பினர் அட்டை பெற்றிருக்க வேண்டும்"],
+    "apply": {
+      "portal": "https://tnesevai.tn.gov.in",
+      "offline": "வட்டாட்சியர் அலுவலகம் (சமூகப் பாதுகாப்புத் திட்டம் - உழவர் பாதுகாப்பு பிரிவு)",
+      "steps_ta": [
+        "1. கிராம நிர்வாக அலுவலரிடம் விவசாயத் தொழிலாளி என சான்று பெறவும்.",
+        "2. தாலுகா அலுவலகத்தில் உழவர் பாதுகாப்பு அட்டைக்கு பதிவு செய்யவும்.",
+        "3. நிவாரண உதவி தேவைப்படும்போது உரிய சான்றுகளுடன் வட்டாட்சியரிடம் சமர்ப்பிக்கவும்."
+      ]
+    },
+    "helpline": ["1800-425-1556", "1100"],
+    "sources": [
+      {
+        "name": "TN Revenue Dept - Social Security",
+        "url": "https://revenue.tn.gov.in",
+        "last_verified": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "scheme_id": "free_legal_aid",
+    "names": {
+      "en": "Free Legal Aid (NALSA / TNSLSA)",
+      "ta": "இலவச சட்ட உதவி (சட்டப் பணிகள் ஆணைக்குழு)",
+      "aliases": ["இலவச வக்கீல்", "சட்ட உதவி", "NALSA", "Lok Adalat", "நீதிமன்ற உதவி"]
+    },
+    "level": "central",
+    "status": "active",
+    "benefit": {
+      "amount_inr": 0,
+      "frequency": "100% Free lawyer and court fee waiver",
+      "description_ta": "வழக்கறிஞர் கட்டணம் மற்றும் நீதிமன்ற செலவுகள் ஏதுமின்றி அரசு செலவில் இலவச வழக்கறிஞர் உதவி."
+    },
+    "audience": ["all", "women", "worker", "farmer", "senior"],
+    "rules": {
+      "all": [
+        {"field": "special_status", "in": ["all_eligible_categories", "any"]}
+      ],
+      "maybe_if": [
+        {"field": "gender", "eq": "F", "note": "பெண்கள் அனைவருக்கும் வருமான வரம்பின்றி இலவச சட்ட உதவி சட்டப்படி உரிமை!"},
+        {"field": "community", "in": ["SC", "ST"], "note": "ஆதிதிராவிடர் மற்றும் பழங்குடியினருக்கு வருமான வரம்பின்றி இலவச சட்ட உதவி உண்டு."},
+        {"field": "family_income_bucket", "in": ["below_1.2L", "1.2L_to_2.5L"], "note": "ஆண்டு வருமானம் ₹3 லட்சத்திற்குள் உள்ள பொது பிரிவினரும் தகுதி."}
+      ]
+    },
+    "not_eligible_reasons": {},
+    "documents": [
+      "ஆதார் அட்டை அல்லது ஏதேனும் அடையாள அட்டை",
+      "வழக்கு / பிரச்சனை தொடர்பான ஆவணங்கள் (FIR, நோட்டீஸ், பத்திரம் போன்றவை)",
+      "வருமானச் சான்றிதழ் (பெண்கள், SC/ST மற்றும் மாற்றுத்திறனாளிகளுக்கு தேவையில்லை)"
+    ],
+    "prerequisites": ["சட்டப் பணிகள் ஆணைக்குழு சட்டம் 1987 பிரிவு 12-ன் கீழ் பெண்கள், குழந்தைகள், SC/ST, தொழிலாளர்களுக்கு முழு உரிமை"],
+    "apply": {
+      "portal": "https://nalsa.gov.in",
+      "offline": "வட்டார நீதிமன்ற வளாகத்தில் உள்ள தாலுகா சட்டப் பணிகள் குழு (TLSC) அல்லது மாவட்ட நீதிமன்றத்தில் உள்ள DLSA",
+      "steps_ta": [
+        "1. அருகிலுள்ள தாலுகா நீதிமன்ற வளாகத்திற்கு சென்று 'இலவச சட்ட உதவி மையம்' அணுகவும்.",
+        "2. பிரச்சனை விவரங்களை எழுத்துப்பூர்வமாக அல்லது வாய்மொழியாக தெரிவிக்கவும்.",
+        "3. உங்களுக்கு உதவ அரசு வழக்கறிஞர் ஒருவரை ஆணைக்குழு நியமிக்கும் (முழுவதும் இலவசம்)."
+      ]
+    },
+    "helpline": ["15100", "044-25342834"],
+    "sources": [
+      {
+        "name": "NALSA / TNSLSA Official",
+        "url": "https://nalsa.gov.in",
+        "last_verified": "2026-09-18"
+      }
+    ]
+  }
+]

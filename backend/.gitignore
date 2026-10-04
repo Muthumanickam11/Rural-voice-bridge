@@ -1,0 +1,20 @@
+# Secrets: never commit a populated .env
+.env
+.env.*
+!.env.example
+
+# Runtime data
+logs/
+*.log
+verify_out.txt
+utf8_check.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

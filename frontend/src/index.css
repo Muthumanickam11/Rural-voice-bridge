@@ -1,0 +1,284 @@
+/* ============================================================
+   Rural Voice Bridge — Global CSS Design System
+   Dark-mode, Tamil-first, mobile-first, premium aesthetics
+   ============================================================ */
+
+:root {
+  /* Color Palette */
+  --clr-bg:           #070e1c;
+  --clr-surface:      #0d1a30;
+  --clr-surface-2:    #111f38;
+  --clr-surface-3:    #162443;
+  --clr-border:       rgba(99, 162, 255, 0.12);
+  --clr-border-glow:  rgba(99, 162, 255, 0.30);
+
+  --clr-primary:      #4a9eff;
+  --clr-primary-glow: rgba(74, 158, 255, 0.20);
+  --clr-secondary:    #34d399;
+  --clr-secondary-glow: rgba(52, 211, 153, 0.18);
+  --clr-accent:       #f59e0b;
+  --clr-danger:       #f87171;
+  --clr-danger-glow:  rgba(248, 113, 113, 0.20);
+  --clr-warning:      #fbbf24;
+
+  /* Text */
+  --clr-text:         #e2eaf8;
+  --clr-text-muted:   #8da3c0;
+  --clr-text-subtle:  #7f95b4;
+
+  /* Fonts */
+  --font-ta:  'Noto Sans Tamil', 'Segoe UI', system-ui, sans-serif;
+  --font-en:  'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* Sizes */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md:  0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg:  0 8px 40px rgba(0,0,0,0.6);
+  --glow-primary: 0 0 20px rgba(74, 158, 255, 0.3);
+  --glow-green:   0 0 20px rgba(52, 211, 153, 0.3);
+  --glow-red:     0 0 20px rgba(248, 113, 113, 0.4);
+
+  /* Transitions */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Plan requires 18px body text. 1rem = 18px, so `1rem` is the minimum body size. */
+html { scroll-behavior: smooth; font-size: 18px; }
+
+body {
+  font-family: var(--font-ta);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(74, 158, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 30% at 90% 80%, rgba(52, 211, 153, 0.06) 0%, transparent 50%);
+}
+
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--clr-surface); }
+::-webkit-scrollbar-thumb { background: var(--clr-surface-3); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--clr-primary); }
+
+/* Typography */
+/* --font-en first, then Tamil: Latin glyphs use Inter, Tamil glyphs fall through
+   to Noto Sans Tamil. Tamil needs taller line spacing for its ascenders. */
+h1, h2, h3, h4 { font-family: var(--font-en), var(--font-ta); line-height: 1.4; }
+p, li, label, span { line-height: 1.7; }
+.ta { font-family: var(--font-ta); }
+.en { font-family: var(--font-en); }
+
+/* Glass Card */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+}
+.glass:hover { border-color: var(--clr-border-glow); }
+
+/* Gradient Borders */
+.gradient-border {
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(74,158,255,0.4), rgba(52,211,153,0.3), rgba(74,158,255,0.1));
+  z-index: -1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-full);
+  border: none;
+  font-family: var(--font-ta);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  text-decoration: none;
+  user-select: none;
+}
+.btn:active { transform: scale(0.96); }
+
+.btn-primary {
+  background: linear-gradient(135deg, #4a9eff, #1a6fde);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(74,158,255,0.35);
+}
+.btn-primary:hover { box-shadow: 0 6px 24px rgba(74,158,255,0.5); transform: translateY(-1px); }
+
+.btn-success {
+  background: linear-gradient(135deg, #34d399, #059669);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(52,211,153,0.35);
+}
+.btn-success:hover { box-shadow: 0 6px 24px rgba(52,211,153,0.5); transform: translateY(-1px); }
+
+.btn-danger {
+  background: linear-gradient(135deg, #f87171, #dc2626);
+  color: #fff;
+  box-shadow: var(--glow-red);
+  animation: pulse-danger 2s infinite;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--clr-border);
+  color: var(--clr-text-muted);
+}
+.btn-ghost:hover { border-color: var(--clr-primary); color: var(--clr-primary); }
+
+/* Tags / Pills */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.tag-blue { background: rgba(74,158,255,0.15); color: #4a9eff; border: 1px solid rgba(74,158,255,0.25); }
+.tag-green { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.25); }
+.tag-amber { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.25); }
+.tag-red { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid rgba(248,113,113,0.25); }
+
+/* Input */
+.input {
+  width: 100%;
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.1rem;
+  color: var(--clr-text);
+  font-family: var(--font-ta);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input:focus {
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 3px var(--clr-primary-glow);
+}
+.input::placeholder { color: var(--clr-text-subtle); }
+
+/* Divider */
+.divider { height: 1px; background: var(--clr-border); margin: 1.5rem 0; }
+
+/* Spinner */
+.spinner {
+  width: 22px; height: 22px;
+  border: 2.5px solid rgba(74,158,255,0.2);
+  border-top-color: var(--clr-primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Animations */
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@keyframes pulse-danger {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(248,113,113,0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(248,113,113,0); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes ripple {
+  0% { transform: scale(0.85); opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes mic-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(248,113,113,0.6); }
+  50% { transform: scale(1.05); box-shadow: 0 0 0 16px rgba(248,113,113,0); }
+}
+
+@keyframes mic-breathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.04); opacity: 0.86; }
+}
+
+@keyframes mic-spin-hint {
+  0% { filter: hue-rotate(0deg) saturate(1); }
+  50% { filter: hue-rotate(-18deg) saturate(1.35); }
+  100% { filter: hue-rotate(0deg) saturate(1); }
+}
+
+@keyframes mic-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes thinking-dots {
+  0%, 20% { opacity: 0.2; }
+  50% { opacity: 1; }
+  80%, 100% { opacity: 0.2; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Answer Card Animations */
+.animate-slide-up { animation: slide-up 0.4s var(--ease) both; }
+.animate-fade-in { animation: fade-in 0.3s var(--ease) both; }
+
+/* Skeleton loading */
+.skeleton {
+  background: linear-gradient(90deg, var(--clr-surface-2) 25%, var(--clr-surface-3) 50%, var(--clr-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+/* Utility */
+.w-full { width: 100%; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
+.text-center { text-align: center; }
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "madurai",
+    "name_en": "Madurai",
+    "name_ta": "மதுரை",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "District Legal Services Authority (DLSA)",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு",
+        "address": "District Court Campus, Melur Main Road, Madurai - 625020",
+        "phone": "0452-2531088",
+        "timing": "10:00 AM - 5:45 PM (திங்கள் - வெள்ளி)",
+        "services": ["இலவச வழக்கறிஞர்", "லோக் அதாலத் சமரசம்", "இலவச சட்ட ஆலோசனை"]
+      },
+      {
+        "type": "collectorate",
+        "name_en": "District Collectorate, Madurai",
+        "name_ta": "மாவட்ட ஆட்சியர் அலுவலகம், மதுரை",
+        "address": "Collectorate Complex, Madurai - 625020",
+        "phone": "0452-2531110",
+        "timing": "10:00 AM - 5:45 PM (திங்கள் மனுநீதி நாள்)",
+        "services": ["மக்கள் குறை தீர்ப்பு மனுக்கள்", "CMCHIS காப்பீடு அட்டை பிரிவு", "முதியோர் நலன்"]
+      },
+      {
+        "type": "taluk",
+        "name_en": "Taluk Office - Madurai North",
+        "name_ta": "வட்டாட்சியர் அலுவலகம் - மதுரை வடக்கு",
+        "address": "Near District Court, Madurai - 625020",
+        "phone": "0452-2530182",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["பட்டா மாறுதல்", "சாதி/வருமானச் சான்றிதழ்", "வாரிசு சான்றிதழ்", "உழவர் அட்டை"]
+      },
+      {
+        "type": "women_police",
+        "name_en": "All Women Police Station (AWPS) - Madurai Town",
+        "name_ta": "அனைத்து மகளிர் காவல் நிலையம் - மதுரை டவுன்",
+        "address": "South Veli Street, Madurai - 625001",
+        "phone": "0452-2338000",
+        "timing": "24/7",
+        "services": ["குடும்ப வன்முறை புகார்", "வரதட்சணை புகார்", "பெண்கள் பாதுகாப்பு"]
+      }
+    ]
+  },
+  {
+    "id": "chennai",
+    "name_en": "Chennai",
+    "name_ta": "சென்னை",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "High Court Legal Services Committee / DLSA",
+        "name_ta": "சென்னை உயர்நீதிமன்ற சட்டப் பணிகள் ஆணைக்குழு",
+        "address": "High Court Campus, Chennai - 600104",
+        "phone": "044-25342834",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["இலவச சட்ட உதவி", "நீதிமன்ற கட்டண விலக்கு"]
+      },
+      {
+        "type": "collectorate",
+        "name_en": "District Collectorate, Chennai",
+        "name_ta": "மாவட்ட ஆட்சியர் அலுவலகம், சென்னை",
+        "address": "Singaravelar Maaligai, Rajaji Salai, Chennai - 600001",
+        "phone": "044-25268320",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["பொது மக்கள் குறை தீர்ப்பு", "சான்றிதழ்கள் மேல்முறையீடு"]
+      }
+    ]
+  },
+  {
+    "id": "coimbatore",
+    "name_en": "Coimbatore",
+    "name_ta": "கோயம்புத்தூர்",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "District Legal Services Authority (DLSA)",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு",
+        "address": "Combined Court Buildings, Coimbatore - 641018",
+        "phone": "0422-2380220",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["இலவச வழக்கறிஞர் நியமனம்", "லோக் அதாலத்"]
+      },
+      {
+        "type": "collectorate",
+        "name_en": "District Collectorate, Coimbatore",
+        "name_ta": "மாவட்ட ஆட்சியர் அலுவலகம், கோவை",
+        "address": "State Bank Road, Gopalapuram, Coimbatore - 641018",
+        "phone": "0422-2301114",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["மக்கள் மனுக்கள்", "விவசாய குறைதீர்ப்பு"]
+      }
+    ]
+  },
+  {
+    "id": "villupuram",
+    "name_en": "Villupuram",
+    "name_ta": "விழுப்புரம்",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "District Legal Services Authority, Villupuram",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு, விழுப்புரம்",
+        "address": "Integrated Court Complex, Villupuram - 605602",
+        "phone": "04146-224422",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["இலவச சட்ட உதவி", "விவசாய கூலிகள் உரிமை"]
+      },
+      {
+        "type": "collectorate",
+        "name_en": "Villupuram Collectorate",
+        "name_ta": "மாவட்ட ஆட்சியர் அலுவலகம், விழுப்புரம்",
+        "address": "Master Plan Complex, Villupuram - 605602",
+        "phone": "04146-222450",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["திங்கள் குறை தீர்ப்பு", "உழவர் பாதுகாப்பு அட்டை"]
+      }
+    ]
+  },
+  {
+    "id": "salem",
+    "name_en": "Salem",
+    "name_ta": "சேலம்",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "DLSA Salem",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு, சேலம்",
+        "address": "Court Complex, Hasthampatti, Salem - 636007",
+        "phone": "0427-2415100",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["இலவச சட்ட உதவி", "தொழிலாளர் பிணக்கு சமரசம்"]
+      }
+    ]
+  },
+  {
+    "id": "thanjavur",
+    "name_en": "Thanjavur",
+    "name_ta": "தஞ்சாவூர்",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "DLSA Thanjavur",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு, தஞ்சாவூர்",
+        "address": "Court Complex, Thanjavur - 613001",
+        "phone": "04362-230550",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["விவசாயிகள் கடன்/நில சட்ட உதவி", "இலவச வக்கீல்"]
+      }
+    ]
+  },
+  {
+    "id": "tirunelveli",
+    "name_en": "Tirunelveli",
+    "name_ta": "திருநெல்வேலி",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "DLSA Tirunelveli",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு, திருநெல்வேலி",
+        "address": "District Court Campus, Palayamkottai - 627002",
+        "phone": "0462-2572500",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["இலவச வழக்கறிஞர்", "லோக் அதாலத்"]
+      }
+    ]
+  },
+  {
+    "id": "dharmapuri",
+    "name_en": "Dharmapuri",
+    "name_ta": "தருமபுரி",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "DLSA Dharmapuri",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு, தருமபுரி",
+        "address": "Court Complex, Dharmapuri - 636701",
+        "phone": "04342-260100",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["பெண்கள் பாதுகாப்பு", "இலவச சட்ட ஆலோசனை"]
+      }
+    ]
+  },
+  {
+    "id": "tiruchirappalli",
+    "name_en": "Tiruchirappalli",
+    "name_ta": "திருச்சிராப்பள்ளி",
+    "offices": [
+      {
+        "type": "dlsa",
+        "name_en": "DLSA Tiruchirappalli",
+        "name_ta": "மாவட்ட சட்டப் பணிகள் ஆணைக்குழு, திருச்சி",
+        "address": "District Court Campus, Cantonment, Trichy - 620001",
+        "phone": "0431-2415100",
+        "timing": "10:00 AM - 5:45 PM",
+        "services": ["இலவச சட்ட உதவி", "லோக் அதாலத்"]
+      }
+    ]
+  }
+]

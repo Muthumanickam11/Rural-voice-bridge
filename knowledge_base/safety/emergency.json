@@ -1,0 +1,58 @@
+{
+  "immediate_danger": {
+    "category": "immediate_danger",
+    "title_ta": "உடனடி பாதுகாப்பு உதவி",
+    "title_en": "Immediate Safety Assistance",
+    "message_ta": "நீங்கள் உடனடி ஆபத்தில் இருப்பதாகத் தெரிகிறது. உங்கள் பாதுகாப்பு முதலில். இருப்பின் உடனடியாக 112 (அவசரம்), 100 (காவல்), அல்லது 181 (பெண்கள் உதவி மையம்) எண்ணை அழைக்கவும். தயவுசெய்து பயப்படும் இடத்திலிருந்து பாதுகாப்பான இடத்திற்குச் செல்லவும். காவல் வந்து சேரும் வரை உங்கள் குரலை உயர்த்தி மற்றவர்களிடம் உதவி கேளுங்கள்.",
+    "helpline_numbers": ["112", "100", "181", "1098", "108"],
+    "action": "call_immediately",
+    "show_quick_exit": true,
+    "show_sos": true
+  },
+  "suicide_self_harm": {
+    "category": "suicide_self_harm",
+    "title_ta": "உடனடி மனநல உதவி & அவசர ஆலோசனை",
+    "title_en": "Immediate Mental Health & Crisis Support",
+    "message_ta": "உங்கள் வாழ்க்கை மிகவும் மதிப்பானது. கடுமையான மன உளைச்சலில் இருந்தால் தயவுசெய்து தவறான முடிவை எடுக்காதீர்கள். உங்களுக்கு உதவ தமிழக அரசு மற்றும் மத்திய அரசின் இலவச மனநல ஆலோசகர்கள் 24 மணி நேரமும் காத்திருக்கிறார்கள். உடனடியாக 14416 (Tele-MANAS) அல்லது 112 அழையுங்கள்.",
+    "helpline_numbers": ["14416", "112", "1800-89-14416"],
+    "action": "call_immediately",
+    "show_sos": true
+  },
+  "domestic_violence": {
+    "category": "domestic_violence",
+    "title_ta": "பெண்கள் அவசர பாதுகாப்பு & சட்ட உதவி",
+    "title_en": "Women Safety & Emergency Protection",
+    "message_ta": "நீங்கள் வன்முறையிலோ அல்லது உயிருக்கு ஆபத்தான சூழலிலோ இருந்தால் உடனடியாக 181 (பெண்கள் உதவி மையம்) அல்லது 100/112 (காவல்துறை) அழையுங்கள். உங்களுக்கு உடனடி புகலிடம் மற்றும் இலவச வழக்கறிஞர் உதவி வழங்க சட்டத்தில் வழி உள்ளது.",
+    "helpline_numbers": ["181", "112", "15100"],
+    "action": "call_immediately",
+    "show_quick_exit": true,
+    "show_sos": true
+  },
+  "child_abuse": {
+    "category": "child_abuse",
+    "title_ta": "குழந்தைகள் பாதுகாப்பு உதவி (POCSO)",
+    "title_en": "Child Protection & POCSO Assistance",
+    "message_ta": "குழந்தைகளுக்கு எதிரான பாலியல் சீண்டல், துன்புறுத்தல் அல்லது குழந்தைத் திருமணம் பற்றிய தகவல்களுக்கு உடனடியாக சைல்டுலைன் 1098 அல்லது 112 அழையுங்கள். தகவல் தருபவரின் ரகசியம் காக்கப்படும்.",
+    "helpline_numbers": ["1098", "112"],
+    "action": "call_immediately",
+    "show_sos": true
+  },
+  "cyber_fraud": {
+    "category": "cyber_fraud",
+    "title_ta": "சைபர் பண மோசடி அவசர உதவி",
+    "title_en": "Cyber Financial Fraud Immediate Action",
+    "message_ta": "வங்கி கணக்கிலிருந்து ஏமாற்றி பணம் எடுக்கப்பட்டால் முதல் 1 மணி நேரத்திற்குள் 1930 எண்ணை அழைத்து புகார் அளியுங்கள். இது வங்கி பரிவர்த்தனையை முடக்கி பணத்தை மீட்க உதவும். உடனடியாக cybercrime.gov.in போர்ட்டலிலும் பதியவும்.",
+    "helpline_numbers": ["1930", "112"],
+    "action": "call_and_block_bank",
+    "show_sos": false
+  },
+  "medical_emergency": {
+    "category": "medical_emergency",
+    "title_ta": "மருத்துவ அவசர உதவி",
+    "title_en": "Medical Emergency (Ambulance)",
+    "message_ta": "பாம்பு கடி, மாரடைப்பு, மூச்சுத் திணறல் போன்ற அவசர காலங்களில் உடனடியாக 108 ஆம்புலன்ஸை அழையுங்கள். தாமதிக்காமல் அருகிலுள்ள அரசு தலைமை மருத்துவமனை அல்லது ஆரம்ப சுகாதார நிலையத்திற்கு செல்லவும்.",
+    "helpline_numbers": ["108", "112"],
+    "action": "call_ambulance",
+    "show_sos": true
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "emergency_all",
+    "name_en": "Unified Emergency (Police / Fire / Medical)",
+    "name_ta": "ஒருங்கிணைந்த அவசர உதவி (காவல் / தீ / ஆம்புலன்ஸ்)",
+    "number": "112",
+    "hours": "24/7",
+    "type": "emergency",
+    "last_call_verified": "2026-09-20",
+    "notes": "மத்திய மற்றும் மாநில அரசின் அவசர கால எண். கட்டணம் இல்லை."
+  },
+  {
+    "id": "police",
+    "name_en": "Police Helpline",
+    "name_ta": "காவல் உதவி",
+    "number": "100",
+    "hours": "24/7",
+    "type": "emergency",
+    "last_call_verified": "2026-09-20",
+    "notes": "காவல் துறை அவசர அழைப்பு."
+  },
+  {
+    "id": "ambulance",
+    "name_en": "Medical Emergency (Ambulance)",
+    "name_ta": "மருத்துவ அவசர உதவி (108 ஆம்புலன்ஸ்)",
+    "number": "108",
+    "hours": "24/7",
+    "type": "emergency",
+    "last_call_verified": "2026-09-20",
+    "notes": "இலவச ஆம்புலன்ஸ் சேவை."
+  },
+  {
+    "id": "women_helpline",
+    "name_en": "Women in Distress Helpline",
+    "name_ta": "பெண்கள் உதவி மையம் (குடும்ப வன்முறை / துன்புறுத்தல்)",
+    "number": "181",
+    "hours": "24/7",
+    "type": "safety",
+    "last_call_verified": "2026-09-20",
+    "notes": "குடும்ப வன்முறை, வரதட்சணை, பாதுகாப்புக்கான இலவச உதவி."
+  },
+  {
+    "id": "child_helpline",
+    "name_en": "Childline (POCSO / Child Labour / Abuse)",
+    "name_ta": "குழந்தைகள் பாதுகாப்பு உதவி மையம் (சைல்டுலைன்)",
+    "number": "1098",
+    "hours": "24/7",
+    "type": "safety",
+    "last_call_verified": "2026-09-20",
+    "notes": "குழந்தைத் திருமணம், பாலியல் துன்புறுத்தல், குழந்தை தொழிலாளர் தடுப்பு."
+  },
+  {
+    "id": "mental_health",
+    "name_en": "Tele-MANAS Mental Health & Suicide Prevention",
+    "name_ta": "மனநல ஆலோசனை & துயர்துடைப்பு (Tele-MANAS)",
+    "number": "14416",
+    "hours": "24/7",
+    "type": "health",
+    "last_call_verified": "2026-09-20",
+    "notes": "விவசாயிகள் மன உளைச்சல், தற்கொலை எண்ணம் தடுப்பு உதவி. இலவச அரசு கவுன்சிலிங்."
+  },
+  {
+    "id": "free_legal_aid",
+    "name_en": "NALSA National Free Legal Aid Helpline",
+    "name_ta": "தேசிய இலவச சட்ட உதவி மையம் (NALSA)",
+    "number": "15100",
+    "hours": "24/7",
+    "type": "legal",
+    "last_call_verified": "2026-09-20",
+    "notes": "வழக்கு நடத்த இலவச அரசு வழக்கறிஞர் மற்றும் சட்ட ஆலோசனை."
+  },
+  {
+    "id": "cyber_crime",
+    "name_en": "National Cyber Crime Helpline (Financial Fraud)",
+    "name_ta": "சைபர் குற்றங்கள் & பண மோசடி உதவி மையம்",
+    "number": "1930",
+    "hours": "24/7",
+    "type": "safety",
+    "last_call_verified": "2026-09-20",
+    "notes": "வங்கி கணக்கு பணம் திருட்டு, OTP ஏமாற்றுக்கு உடனடியாக அழைக்கவும்."
+  },
+  {
+    "id": "senior_citizen",
+    "name_en": "Elderline (Senior Citizens Helpline)",
+    "name_ta": "முதியோர் உதவி மையம் (Elderline)",
+    "number": "14567",
+    "hours": "8 AM - 8 PM",
+    "type": "social",
+    "last_call_verified": "2026-09-20",
+    "notes": "முதியோர் பராமரிப்பு, பென்ஷன், சொத்து தகராறு உதவி."
+  },
+  {
+    "id": "cm_helpline",
+    "name_en": "Chief Minister Helpline (Tamil Nadu)",
+    "name_ta": "முதலமைச்சர் உதவி மையம் (தமிழ்நாடு)",
+    "number": "1100",
+    "hours": "7 AM - 10 PM",
+    "type": "grievance",
+    "last_call_verified": "2026-09-20",
+    "notes": "அரசு துறைகள் மீதான பொது மக்களின் புகார்கள் பதிவு செய்யும் மையம்."
+  },
+  {
+    "id": "kisan_call_center",
+    "name_en": "Kisan Call Centre (Agriculture)",
+    "name_ta": "விவசாயிகள் உதவி மையம் (கிசான் கால் சென்டர்)",
+    "number": "1800-180-1551",
+    "hours": "6 AM - 10 PM",
+    "type": "agriculture",
+    "last_call_verified": "2026-09-20",
+    "notes": "பயிர் சாகுபடி, பூச்சி மருந்து, அரசு மானியங்கள் பற்றிய வழிகாட்டல்."
+  }
+]
